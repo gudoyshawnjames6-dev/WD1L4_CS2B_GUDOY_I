@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for proper character encoding and responsive scaling -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grades Evaluation</title>
+    <!-- External CSS link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Section 1: Initial List of Enrolled Students -->
+        <h2>List of Enrolled Students</h2>
+        <table id="enrolledTable">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data populated dynamically or statically representing initial view -->
+                <tr><td>Marie</td><td>93</td></tr>
+                <tr><td>Mayyang</td><td>86</td></tr>
+                <tr><td>Ambit</td><td>79</td></tr>
+                <tr><td>Wasili</td><td>96</td></tr>
+                <tr><td>Emerson</td><td>74</td></tr>
+            </tbody>
+        </table>
+
+        <!-- Button to trigger JavaScript grade evaluation -->
+        <button id="evalButton">Show Grade Equivalent</button>
+
+        <!-- Section 2: Detailed Grade Equivalents and Remarks -->
+        <div id="evaluationSection" class="hidden">
+            <h2>Grade Equivalents</h2>
+            <table id="resultTable">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Grade</th>
+                        <th>Equivalent</th>
+                        <th>Remark</th>
+                        <th>Academic Leader</th>
+                    </tr>
+                </thead>
+                <tbody id="resultBody">
+                    <!-- JavaScript will dynamically populate evaluated rows here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- External JavaScript link -->
+    <script src="js/script.js"></script>
+</body>
+</html>
